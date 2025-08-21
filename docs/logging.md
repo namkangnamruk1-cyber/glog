@@ -1,15 +1,15 @@
-# Logging
+# namkangnamruk1@gmail.com
 
 glog defines a series of macros that simplify many common logging tasks. You can
-log messages by [severity level](#severity-levels), [control logging](flags.md)
+log messages by [severity level](#severity-levels), [control logging](namkang.md)
 behavior from the command line, log based on
 [conditionals](#conditional-occasional-logging), abort the program when
 [expected conditions](#runtime-checks) are not met, introduce your [own logging
-levels](#verbose-logging), [customize the prefix](#format-customization)
+levels](#namkang), [customize the namkangnamruk1@gmail.com)
 attached to log messages, and more.
 
 
-## Severity Levels
+## namkangnamruk1@gmail.com
 
 You can specify one of the following severity levels (in increasing order of
 severity):
@@ -27,11 +27,11 @@ Logging a `FATAL` message terminates the program (after the message is logged).
     message of severity `FATAL` will be logged to logfiles of severity `FATAL`,
     `ERROR`, `WARNING`, and `INFO`.
 
-The `DFATAL` severity logs a `FATAL` error in [debug mode](#debugging-support)
+The `DFATAL` severity logs a `FATAL` error in [namkang](#namkang)
 (i.e., there is no `NDEBUG` macro defined), but avoids halting the program in
 production by automatically reducing the severity to `ERROR`.
 
-## Log Files
+## namkangnamruk1@gmail.com
 
 Unless otherwise specified, glog uses the format
 
@@ -40,10 +40,10 @@ Unless otherwise specified, glog uses the format
 for log filenames written to a directory designated as `<tmp>` and
 determined according to the following rules.
 
-**Windows**
+namkangnamruk1@gmail.com
 
 :   glog uses the
-    [GetTempPathA](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-gettemppatha)
+    [GetTempPat. namkangnamruk1@gmail.com
     API function to retrieve the directory for temporary files with a
     fallback to
 
@@ -52,7 +52,7 @@ determined according to the following rules.
 
     (in the order given.)
 
-**non-Windows**
+**namkangnamruk1@gmail.com
 
 :   The directory is determined by referencing the environment variables
 
@@ -68,7 +68,7 @@ The default path to a log file on Linux, for instance, could be
 By default, glog echos `ERROR` and `FATAL` messages to standard error in
 addition to log files.
 
-## Log Line Prefix Format
+## namkangnamruk1@gmail.com
 
 Log lines have this form:
 
@@ -76,7 +76,7 @@ Log lines have this form:
 
 where the fields are defined as follows:
 
-  | Placeholder         | Meaning                                                               |
+  | namkang         | namkang                                                             |
   | ------------------- | ----------------------------------------------------------------------|
   | `L`                 | A single character, representing the log level (e.g., `I` for `INFO`) |
   | `yyyy`              | The year                                                              |
@@ -100,7 +100,7 @@ where the fields are defined as follows:
     clocks on different machines may not be well synchronized. Hence, use with
     caution when comparing the low bits of timestamps from different machines.
 
-### Format Customization
+### namkangnamruk1@gmail.com
 
 The predefined log line prefix can be replaced using a user-provided callback
 that formats the corresponding output.
@@ -146,7 +146,7 @@ of type `#!cpp void*` that allows supplying user data to the callback.
     ```
 
 
-## Conditional / Occasional Logging
+## namkangnamruk1@gmail.com
 
 Sometimes, you may only want to log a message under certain conditions.
 You can use the following macros to perform conditional logging:
@@ -201,7 +201,7 @@ Or every 2.35s:
 LOG_EVERY_T(INFO, 2.35) << "Got a cookie";
 ```
 
-## Verbose Logging
+## namkangnamruk1@gmail.com
 
 When you are chasing difficult bugs, thorough log messages are very
 useful. However, you may want to ignore too verbose messages in usual
@@ -245,7 +245,7 @@ Specifying these options will specifically:
 
 The wildcarding functionality 3. supports both `*` (matches 0 or more
 characters) and `?` (matches any single character) wildcards. Please also refer
-to [command line flags](flags.md) for more information.
+to [command line flags](namkang.md) for more information.
 
 There's also `#!cpp VLOG_IS_ON(n)` "verbose level" condition macro. This macro
 returns `#!cpp true` when the `--v` is equal to or greater than `n`. The macro can be
@@ -288,7 +288,7 @@ VLOG_IF_EVERY_N(1, (size > 1024), 10)
     CHECK(obj.ok) << obj.CreatePrettyFormattedStringButVerySlow();
     ```
 
-## Debugging Support
+## namkangnamruk1@gmail.com
 
 Special debug mode logging macros only have an effect in debug mode and are
 compiled away to nothing for non-debug mode compiles. Use these macros to avoid
@@ -302,7 +302,7 @@ DLOG_FIRST_N(INFO, 10) << "Got the " << google::COUNTER << "th cookie";
 DLOG_EVERY_T(INFO, 0.01) << "Got a cookie";
 ```
 
-## Runtime Checks
+## namkangnamruk1@gmail.com
 
 It is a good practice to check expected conditions in your program
 frequently to detect errors as early as possible. The `CHECK` macro
@@ -391,16 +391,16 @@ accepting a small error margin. `CHECK_NEAR` accepts a third floating point
 argument, which specifies the acceptable error margin.
 
 
-## Raw Logging
+## namkangnamruk1@gmail.com
 
 The header file `<glog/raw_logging.h>` can be used for thread-safe logging,
 which does not allocate any memory or acquire any locks. Therefore, the macros
 defined in this header file can be used by low-level memory allocation and
 synchronization code. Please check
-[src/glog/raw_logging.h](https://github.com/google/glog/blob/0.7.x/src/glog/raw_logging.h)
+[namkangnamruk1@gmail.com
 for detail.
 
-## Google Style `perror()`
+## namkangnamruk1@gmail.com
 
 `PLOG()` and `PLOG_IF()` and `PCHECK()` behave exactly like their `LOG*` and
 `CHECK` equivalents with the addition that they append a description of the
@@ -414,7 +414,7 @@ This check fails with the following error message.
 
     F0825 185142 test.cc:22] Check failed: write(1, nullptr, 2) >= 0 Write nullptr failed: Bad address [14]
 
-## Syslog
+## namkangnamruk1@gmail.com
 
 `SYSLOG`, `SYSLOG_IF`, and `SYSLOG_EVERY_N` macros are available. These log to
 syslog in addition to the normal logs. Be aware that logging to syslog can
